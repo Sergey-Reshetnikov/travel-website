@@ -37,3 +37,18 @@ function scrollHeader() {
 }
 
 window.addEventListener("scroll", scrollHeader);
+
+//=============================SWIPER DISCOVER===============================
+
+var swiper = new Swiper(".discover__container", {
+  effect: "coverflow",
+  grabCursor: true,
+  centeredSlides: true,
+  slidesPerView: "auto",
+  loop: true,
+  spaceBetween: 5,
+  coverflowEffect: {
+    rotate: 50,
+  },
+});
+
