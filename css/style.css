@@ -2,10 +2,7 @@
 
 :root {
   --header-height: 3rem;
-
-
   --hue-color: 190;
-
   --first-color: hsl(var(--hue-color), 64%, 22%);
   --first-color-second: hsl(var(--hue-color), 64%, 22%);
   --first-color-alt: hsl(var(--hue-color), 64%, 15%);
@@ -18,47 +15,34 @@
   --scroll-bar-color: hsl(var(--hue-color), 12%, 90%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 75%);
 
+  --body-font: 'Open Sans', sans-serif;
+  --title-font: 'Raleway', sans-serif;
+  --biggest-font-size: 2.5rem;
+  --h1-font-size: 1.5rem;
+  --h2-font-size: 1.25rem;
+  --h3-font-size: 1rem;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
 
-/* ===========================Font and typography===================== */
+  --font-medium: 500;
+  --font-semi-bold: 600;
 
---body-font: 'Open Sans', sans-serif;
---title-font: 'Raleway', sans-serif;
---biggest-font-size: 2.5rem;
---h1-font-size: 1.5rem;
---h2-font-size: 1.25rem;
---h3-font-size: 1rem;
---normal-font-size: .938rem;
---small-font-size: .813rem;
---smaller-font-size: .75rem;
+  --mb-0-25: .25rem;
+  --mb-0-5: .5rem;
+  --mb-0-75: .75rem;
+  --mb-1: 1rem;
+  --mb-1-25: 1.25rem;
+  --mb-1-5: 1.5rem;
+  --mb-2: 2rem;
+  --mb-2-5: 2.5rem;
 
-/* =========================Font weight============================== */
+  --z-tooltip: 10;
+  --z-fixed: 100;
 
---font-medium: 500;
---font-semi-bold: 600;
-
-/* =========================Margenes Bottom========================== */
-
---mb-0-25: .25rem;
---mb-0-5: .5rem;
---mb-0-75: .75rem;
---mb-1: 1rem;
---mb-1-25: 1.25rem;
---mb-1-5: 1.5rem;
---mb-2: 2rem;
---mb-2-5: 2.5rem;
-
-
-/* =========================== z index ============================= */
-
---z-tooltip: 10;
---z-fixed: 100;
-
-
-/* ============================ Hover overlay ====================== */
-
---img-transition: .3s;
---img-hidden: hidden;
---img-scale: scale(1.1);
+  --img-transition: .3s;
+  --img-hidden: hidden;
+  --img-scale: scale(1.1);
 }
 
 @media screen and (min-width: 968px) {
@@ -73,8 +57,6 @@
   }
 }
 
-/* =========================Variables Dark theme=================== */
-
 body.dark-theme {
   --first-color-second: hsl(var(--hue-color), 54%, 12%);
   --title-color: hsl(var(--hue-color), 24%, 95%);
@@ -84,8 +66,6 @@ body.dark-theme {
   --scroll-bar-color: hsl(var(--hue-color), 12%, 48%);
   --scroll-thumb-color: hsl(var(--hue-color), 12%, 36%);
 }
-
-/* ========================Button Dark/Light====================== */
 
 .nav__dark {
   display: flex;
@@ -109,7 +89,6 @@ body.dark-theme {
 .change-theme-name {
   font-size: var(--small-font-size);
 }
-/* ========================BASE================================== */
 
 * {
   box-sizing: border-box;
@@ -168,8 +147,6 @@ input {
   overflow-x: hidden;
 }
 
-/* ===========================REUSABLE CSS CLASSES==================== */
-
 .section {
   padding: 4.5rem 0 2.5rem;
 }
@@ -227,7 +204,7 @@ input {
   font-size: 1.2rem;
   cursor: pointer;
 }
- 
+
 .nav__menu {
   position: relative;
 }
@@ -271,13 +248,10 @@ input {
   cursor: pointer;
 } 
 
-/* =====show menu========= */
 .show-menu {
   right: 0;
 }
 
-
-/* =====change background header========= */
 .scroll-header {
   background-color: var(--body-color);
   box-shadow: 0 0 4px hsla(var(--hue-color), 64%, 15%, .15);
@@ -287,8 +261,6 @@ input {
 .scroll-header .nav__toggle {
   color: var(--title-color);
 }
-
-/* ==========Active link=============== */
 
 .active-link {
   position: relative;
@@ -303,7 +275,6 @@ input {
   height: 2px;
   bottom: -.75rem;
 }
-
 
 /* ===========================HOME============================ */
 
@@ -364,7 +335,6 @@ input {
   right: 0;
   bottom: 1rem;
   width: 228px;
-
 }
 
 .home__info-title {
@@ -391,7 +361,7 @@ input {
   transform: var(--img-scale);
 }
 
-/* =========================BUTTONS========================== */
+/* =========================BUTTON========================== */
 
 .button {
   display: inline-block;
@@ -415,13 +385,11 @@ button:hover {
 .button--link {
   background: none;
   padding: 0;
-
 }
 
 .button--link:hover {
   background: none;
 }
-
 
 /* =========================================ABOUT========================== */
 
@@ -564,7 +532,6 @@ button:hover {
   overflow: var(--img-hidden);
 }
 
-
 /* =========================================VIDEO========================== */
 
 .video__container {
@@ -591,8 +558,7 @@ button:hover {
   font-size: 1.2rem;
 }
 
-
-/* =========================================PLACES========================== */
+/* =========================================PLACE========================== */
 
 .place__card,
 .place__img {
@@ -671,7 +637,6 @@ button:hover {
   transform: var(--img-scale);
 }
 
-
 /* =========================================SUBSCRIBE========================== */
 
 .subscribe__bg {
@@ -706,7 +671,6 @@ button:hover {
 .subscribe__input::placeholder {
   color: var(--text-color);
 }
-
 
 /* =========================================SPONSORS========================== */
 
@@ -822,9 +786,6 @@ button:hover {
   bottom: 5rem;
 }
 
-/* ===========================SCROLL BAR============================ */
-
-
 ::-webkit-scrollbar {
   width: .60rem;
   background-color: var(--scroll-bar-color);
@@ -837,8 +798,6 @@ button:hover {
 ::-webkit-scrollbar-thumb:hover {
   background-color: var(--text-color-light);
 }
-
-
 
 /* ===========================MEDIA QUERIES============================ */
 
@@ -891,7 +850,6 @@ button:hover {
   body {
     margin: 0;
   }
-
   .nav {
     height: calc(var(--header-height) + 1.5rem);
   }
@@ -969,18 +927,15 @@ button:hover {
   .about__description {
     margin-bottom: var(--mb-2);
   }
-
   .discover__container {
     width: 610px;
     margin-left: auto;
     margin-right: auto;
   }
-  
   .discover__container,
   .place__container {
     padding-top: 2rem;
   }
-
   .experience__overlay:nth-child(1) {
     width: 363px;
     margin-right: 4rem;
@@ -988,7 +943,6 @@ button:hover {
   .experience__overlay:nth-child(2) {
     width: 160px;
   }
-
   .subscribe__bg {
     background: none;
     padding: 0;
@@ -1000,7 +954,6 @@ button:hover {
   .subscribe__input {
     padding: 0 .5rem;
   }
-
   .footer__rights {
     flex-direction: row;
     justify-content: space-between;
@@ -1012,7 +965,6 @@ button:hover {
     margin-left: auto;
     margin-right: auto;
   }
-
   .home__container {
     grid-template-rows: 2fr .5fr;
   }
@@ -1033,29 +985,23 @@ button:hover {
   .about__img-two {
     width: 290px;
   }
-
   .discover__card {
     width: 237px;
   }
-
   .discover__container {
     width: 700px;
   }
-
   .discover__data {
     left: 1.5rem;
     bottom: 2rem;
   }
-  
   .discover__title {
     font-size: var(--h2-font-size);
   }
-
   .experience__content {
     margin: var(--mb-1) 0;
     column-gap: 3.5rem;
   }
-
   .experience__overlay:nth-child(1) {
     width: 463px;
     margin-right: 7rem;
@@ -1064,7 +1010,6 @@ button:hover {
     width: 220px;
     margin-right: 3rem;
   }
-
   .video__container {
     grid-template-columns: .7fr;
   }
@@ -1078,7 +1023,6 @@ button:hover {
   .place__img {
     height: 263px;
   }
-
   .footer__content {
     justify-items: center;
   }
@@ -1099,6 +1043,3 @@ button:hover {
     height: 640px;
   }
 }
-
-
-
